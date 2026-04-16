@@ -193,7 +193,7 @@
 
   function resolveAssetUrl(fileName) {
     const script = Array.from(document.querySelectorAll('script[src]'))
-      .find(node => node.src.includes('/AutoInstruction/index.js') || node.src.includes('/auto-instruction-appender/index.js'));
+      .find(node => node.src.includes('/AutoInstruction/index.js') || node.src.includes('/AutoInstructionAppender/index.js'));
     if (script?.src) return new URL(fileName, script.src).toString();
     return fileName;
   }
