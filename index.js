@@ -126,7 +126,7 @@
 
     let appendedText = '';
     if (isStealthModeEnabled()) {
-      const stealthText = `\n\n<!--[System Note]\n${enabledText}-->`;
+      const stealthText = ` <!--[System Note]\n${enabledText}-->`;
       appendedText = stealthText;
     } else {
       const formattedText = enabledText.split('\n').join('\n> ');

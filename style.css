@@ -70,9 +70,11 @@
 #aia-list-wrap {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 1 1 auto;
+  min-height: 0; /* 防止子元素撑破最大高度 */
   padding: 14px;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* 增强 iOS 滚动流畅度 */
   gap: 8px;
 }
 
@@ -142,9 +144,14 @@
 @media (max-width: 600px) {
   #aia-modal {
     width: 95vw;
-    top: 5vh;
+    top: 60px; /* 距离顶部固定 60px，避开手机状态栏 */
+    left: 50%;
     transform: translateX(-50%);
-    max-height: 90vh;
+    
+    /* 强行限制最大高度 */
+    max-height: calc(100vh - 120px); 
+    /* 自动适应手机浏览器地址栏的伸缩 */
+    max-height: calc(100dvh - 120px); 
   }
 
   #aia-add-row {
@@ -176,4 +183,8 @@
   opacity: 0.6;
   font-size: 0.9em;
   margin-top: 8px;
+}
+
+instruction {
+  display: none !important;
 }

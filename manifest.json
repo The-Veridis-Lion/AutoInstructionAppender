@@ -1,9 +1,9 @@
 {
   "name": "auto-instruction-appender",
-  "display_name": "自动指令发送",
+  "display_name": "Auto-Instruction-Appender",
   "description": "在发送消息前自动附加已启用指令。",
   "version": "1.0.0",
-  "author": "Veridis",
+  "author": "AutoInstruction",
   "loading_order": 20,
   "requires": [],
   "optional": [],
