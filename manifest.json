@@ -1,13 +1,12 @@
 {
-  "name": "auto-instruction-appender",
   "display_name": "自动指令发送",
   "description": "在发送消息前自动附加已启用指令。",
-  "version": "1.1",
+  "version": "1.2",
   "author": "Veridis",
   "loading_order": 20,
   "requires": [],
   "optional": [],
   "js": "index.js",
   "css": "style.css",
-  "homepage": "https://github.com/example/auto-instruction-appender"
+  "homepage": "https://github.com/example/auto-instruction"
 }
